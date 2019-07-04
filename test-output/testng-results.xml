@@ -1,20 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="1" ignored="0" total="5" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="29672" started-at="2019-06-26T05:11:05Z" finished-at="2019-06-26T05:11:35Z">
+  <suite name="Default suite" duration-ms="304127" started-at="2019-07-04T01:17:47Z" finished-at="2019-07-04T01:22:52Z">
     <groups>
       <group name="cucumber scenarios">
-        <method signature="Runner.feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:TestRunner.Runner@598067a5]" name="feature" class="TestRunner.Runner"/>
+        <method signature="Runner.feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:TestRunner.Runner@271053e1]" name="feature" class="TestRunner.Runner"/>
       </group> <!-- cucumber scenarios -->
     </groups>
-    <test name="Default test" duration-ms="29672" started-at="2019-06-26T05:11:05Z" finished-at="2019-06-26T05:11:35Z">
+    <test name="Default test" duration-ms="304127" started-at="2019-07-04T01:17:47Z" finished-at="2019-07-04T01:22:52Z">
       <class name="TestRunner.Runner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:TestRunner.Runner@598067a5]" name="setUpClass" is-config="true" duration-ms="184" started-at="2019-06-26T05:11:05Z" finished-at="2019-06-26T05:11:05Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:TestRunner.Runner@271053e1]" name="setUpClass" is-config="true" duration-ms="402" started-at="2019-07-04T01:17:48Z" finished-at="2019-07-04T01:17:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:TestRunner.Runner@598067a5]" name="feature" duration-ms="17094" started-at="2019-06-26T05:11:05Z" description="Runs CucumberScenarios" data-provider="scenarios" finished-at="2019-06-26T05:11:22Z">
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:TestRunner.Runner@271053e1]" name="feature" duration-ms="146223" started-at="2019-07-04T01:17:48Z" description="Runs CucumberScenarios" data-provider="scenarios" finished-at="2019-07-04T01:20:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["write data into excel sheet"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Write product details in excel sheet"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[invalid session id
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 6.1.7600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'USER', ip: '192.168.43.169', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628402 (536cd7adbad73a..., userDataDir: C:\Users\Prathap\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:57232}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.100, webStorageEnabled: true}
+Session ID: 3406870a7c8afeb939e3b12ec741e133]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 6.1.7600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'USER', ip: '192.168.43.169', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628402 (536cd7adbad73a..., userDataDir: C:\Users\Prathap\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:57232}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.100, webStorageEnabled: true}
+Session ID: 3406870a7c8afeb939e3b12ec741e133
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.window(RemoteWebDriver.java:902)
+at StepDefinition.Excelwrite_StepDef.writing_details_into_excel_sheet(Excelwrite_StepDef.java:86)
+at ✽.Writing details into excel sheet(C:/Users/Prathap/Desktop/cucumber/features/excelwrite.feature:7)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:TestRunner.Runner@271053e1]" name="feature" duration-ms="47573" started-at="2019-07-04T01:20:14Z" description="Runs CucumberScenarios" data-provider="scenarios" finished-at="2019-07-04T01:21:02Z">
           <params>
             <param index="0">
               <value>
@@ -30,7 +84,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:TestRunner.Runner@598067a5]" name="feature" duration-ms="12206" started-at="2019-06-26T05:11:22Z" description="Runs CucumberScenarios" data-provider="scenarios" finished-at="2019-06-26T05:11:35Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:TestRunner.Runner@271053e1]" name="feature" duration-ms="30551" started-at="2019-07-04T01:21:02Z" description="Runs CucumberScenarios" data-provider="scenarios" finished-at="2019-07-04T01:21:32Z">
           <params>
             <param index="0">
               <value>
@@ -46,7 +100,39 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:TestRunner.Runner@598067a5]" name="tearDownClass" is-config="true" duration-ms="111" started-at="2019-06-26T05:11:35Z" finished-at="2019-06-26T05:11:35Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:TestRunner.Runner@271053e1]" name="feature" duration-ms="53140" started-at="2019-07-04T01:21:32Z" description="Runs CucumberScenarios" data-provider="scenarios" finished-at="2019-07-04T01:22:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Product Payment with Valid Credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Checkout the Product"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:TestRunner.Runner@271053e1]" name="feature" duration-ms="25597" started-at="2019-07-04T01:22:26Z" description="Runs CucumberScenarios" data-provider="scenarios" finished-at="2019-07-04T01:22:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["New User Registration in Myntra"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Sign up the Myntra application"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:TestRunner.Runner@271053e1]" name="tearDownClass" is-config="true" duration-ms="360" started-at="2019-07-04T01:22:51Z" finished-at="2019-07-04T01:22:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

@@ -3,6 +3,64 @@
     "line": 1,
     "elements": [
       {
+        "line": 3,
+        "name": "write data into excel sheet",
+        "description": "",
+        "id": "write-product-details-in-excel-sheet;write-data-into-excel-sheet",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 95543636888,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on Myntra home page",
+            "match": {
+              "location": "Excelwrite_StepDef.user_is_on_Myntra_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 20706244778,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user navigates to product details info page",
+            "match": {
+              "location": "Excelwrite_StepDef.user_navigates_to_product_details_info_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchSessionException: invalid session id\n  (Driver info: chromedriver\u003d2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform\u003dWindows NT 6.1.7600 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027USER\u0027, ip: \u0027192.168.43.169\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.8.0_211\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628402 (536cd7adbad73a..., userDataDir: C:\\Users\\Prathap\\AppData\\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:57232}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.100, webStorageEnabled: true}\nSession ID: 3406870a7c8afeb939e3b12ec741e133\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.window(RemoteWebDriver.java:902)\r\n\tat StepDefinition.Excelwrite_StepDef.writing_details_into_excel_sheet(Excelwrite_StepDef.java:86)\r\n\tat ✽.Writing details into excel sheet(C:/Users/Prathap/Desktop/cucumber/features/excelwrite.feature:7)\r\n",
+              "duration": 29459116794,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "Writing details into excel sheet",
+            "match": {
+              "location": "Excelwrite_StepDef.writing_details_into_excel_sheet()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Write product details in excel sheet",
+    "description": "",
+    "id": "write-product-details-in-excel-sheet",
+    "keyword": "Feature",
+    "uri": "C:/Users/Prathap/Desktop/cucumber/features/excelwrite.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
         "line": 12,
         "name": "Login with Valid Credentials",
         "description": "",
@@ -12,7 +70,7 @@
         "steps": [
           {
             "result": {
-              "duration": 11549883552,
+              "duration": 33892508006,
               "status": "passed"
             },
             "line": 4,
@@ -24,7 +82,7 @@
           },
           {
             "result": {
-              "duration": 3180256344,
+              "duration": 11094461967,
               "status": "passed"
             },
             "line": 5,
@@ -36,7 +94,7 @@
           },
           {
             "result": {
-              "duration": 785883742,
+              "duration": 1650159268,
               "status": "passed"
             },
             "line": 6,
@@ -58,7 +116,7 @@
           },
           {
             "result": {
-              "duration": 1262840857,
+              "duration": 929277293,
               "status": "passed"
             },
             "line": 7,
@@ -80,7 +138,7 @@
         "steps": [
           {
             "result": {
-              "duration": 8009686104,
+              "duration": 21253029594,
               "status": "passed"
             },
             "line": 4,
@@ -92,7 +150,7 @@
           },
           {
             "result": {
-              "duration": 2969191811,
+              "duration": 7211189450,
               "status": "passed"
             },
             "line": 5,
@@ -104,7 +162,7 @@
           },
           {
             "result": {
-              "duration": 479497655,
+              "duration": 1221211016,
               "status": "passed"
             },
             "line": 6,
@@ -126,7 +184,7 @@
           },
           {
             "result": {
-              "duration": 739574551,
+              "duration": 857290344,
               "status": "passed"
             },
             "line": 7,
@@ -143,7 +201,139 @@
     "description": "",
     "id": "login-myntra",
     "keyword": "Feature",
-    "uri": "C:/Users/RAJKUMAR/eclipse-workspace/Cucumber/Myntra_BDD/Myntra_BDD/features/login.feature",
+    "uri": "C:/Users/Prathap/Desktop/cucumber/features/login.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Product Payment with Valid Credentials",
+        "description": "",
+        "id": "checkout-the-product;product-payment-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 14854687598,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on Home Page",
+            "match": {
+              "location": "Payment_StepDef.user_is_on_Home_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 11471489947,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user selects a particular product",
+            "match": {
+              "location": "Payment_StepDef.user_selects_a_particular_product()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 26807080482,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user bags the selected product",
+            "match": {
+              "location": "Payment_StepDef.user_bags_the_selected_product()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Checkout the Product",
+    "description": "",
+    "id": "checkout-the-product",
+    "keyword": "Feature",
+    "uri": "C:/Users/Prathap/Desktop/cucumber/features/payment.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "New User Registration in Myntra",
+        "description": "",
+        "id": "sign-up-the-myntra-application;new-user-registration-in-myntra",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 17670055086,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the Myntra",
+            "match": {
+              "location": "Signup_StepDef.user_is_on_the_Myntra()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5504023961,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User Opens the Signup Link",
+            "match": {
+              "location": "Signup_StepDef.user_Opens_the_Signup_Link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1622994962,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User Enters Email, Name, Mobile Number, and Gender",
+            "match": {
+              "location": "Signup_StepDef.user_Enters_Email_Name_Mobile_Number_and_Gender()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 796458794,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Clicks the \"REGISTER\" Button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "REGISTER",
+                  "offset": 12
+                }
+              ],
+              "location": "Signup_StepDef.clicks_the_Button(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Sign up the Myntra application",
+    "description": "",
+    "id": "sign-up-the-myntra-application",
+    "keyword": "Feature",
+    "uri": "C:/Users/Prathap/Desktop/cucumber/features/signup.feature",
     "tags": []
   }
 ]

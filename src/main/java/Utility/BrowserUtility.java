@@ -13,14 +13,14 @@ public class BrowserUtility {
 	{
 		if(browser.equals("chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver", "D:\\Downloads\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "F:\\Karthick\\Driver\\chromedriver.exe");
 			driver=new ChromeDriver();
 			driver.manage().window().maximize();
 			driver.get(url);
 			driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 			return driver;	
 		}else if(browser.equals("firefox")) {
-				System.setProperty("webdriver.gecko.driver", "D:\\Drivers\\geckodriver.exe");
+				System.setProperty("webdriver.gecko.driver", "F:\\Karthick\\Driver\\geckodriver.exe");
 			    driver = new FirefoxDriver();
 			    driver.manage().window().maximize();
 				driver.get(url);

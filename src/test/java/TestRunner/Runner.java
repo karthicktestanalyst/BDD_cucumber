@@ -10,10 +10,10 @@ import cucumber.api.testng.CucumberFeatureWrapper;
 import cucumber.api.testng.PickleEventWrapper;
 import cucumber.api.testng.TestNGCucumberRunner;
 
-		@CucumberOptions(features= {"C:\\Users\\RAJKUMAR\\eclipse-workspace\\Cucumber\\Myntra_BDD\\Myntra_BDD\\features\\login.feature"
-		,"C:\\Users\\RAJKUMAR\\eclipse-workspace\\Cucumber\\Myntra_BDD\\Myntra_BDD\\features\\signup.feature"
-		,"C:\\Users\\RAJKUMAR\\eclipse-workspace\\Cucumber\\Myntra_BDD\\Myntra_BDD\\features\\payment.feature"
-		,"C:\\Users\\RAJKUMAR\\eclipse-workspace\\Cucumber\\Myntra_BDD\\Myntra_BDD\\features\\excelwrite.feature"
+		@CucumberOptions(features= {"C:\\Users\\Prathap\\Desktop\\cucumber\\features\\login.feature"
+		,"C:\\Users\\Prathap\\Desktop\\cucumber\\features\\signup.feature"
+		,"C:\\Users\\Prathap\\Desktop\\cucumber\\features\\payment.feature"
+		,"C:\\Users\\Prathap\\Desktop\\cucumber\\features\\excelwrite.feature"
 		},glue= {"StepDefinition"},
 		plugin= {"html:target/cucumber-html-report"
 		,"json:target/cucumber/cucumber.json"}

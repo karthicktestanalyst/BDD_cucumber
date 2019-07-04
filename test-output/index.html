@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\RAJKUMAR\AppData\Local\Temp\testng-eclipse--44790002\testng-customsuite.xml</span>
+                    <span>C:\Users\Prathap\AppData\Local\Temp\testng-eclipse-1743417130\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="TestRunner.Runner" hash-for-method="feature(&quot;write data into excel sheet&quot;, &quot;Write product details in excel sheet&quot;)">feature("write data into excel sheet", "Write product details in excel sheet")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,12 +116,22 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="TestRunner.Runner" hash-for-method="feature(&quot;New User Registration in Myntra&quot;, &quot;Sign up the Myntra application&quot;)">feature("New User Registration in Myntra", "Sign up the Myntra application")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="TestRunner.Runner" hash-for-method="feature(&quot;Login with Valid Credentials&quot;, &quot;Login Myntra&quot;)">feature("Login with Valid Credentials", "Login Myntra")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="TestRunner.Runner" hash-for-method="feature(&quot;Login with Valid Credentials&quot;, &quot;Login Myntra&quot;)">feature("Login with Valid Credentials", "Login Myntra")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="TestRunner.Runner" hash-for-method="feature(&quot;Product Payment with Valid Credentials&quot;, &quot;Checkout the Product&quot;)">feature("Product Payment with Valid Credentials", "Checkout the Product")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -122,12 +146,65 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">TestRunner.Runner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="feature(&quot;write data into excel sheet&quot;, &quot;Write product details in excel sheet&quot;)">
+                  </a> <!-- feature("write data into excel sheet", "Write product details in excel sheet") -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">("write data into excel sheet", "Write product details in excel sheet")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: invalid session id
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 6.1.7600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;USER&apos;, ip: &apos;192.168.43.169&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628402 (536cd7adbad73a..., userDataDir: C:\Users\Prathap\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:57232}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.100, webStorageEnabled: true}
+Session ID: 3406870a7c8afeb939e3b12ec741e133
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.window(RemoteWebDriver.java:902)
+	at StepDefinition.Excelwrite_StepDef.writing_details_into_excel_sheet(Excelwrite_StepDef.java:86)
+	at ✽.Writing details into excel sheet(C:/Users/Prathap/Desktop/cucumber/features/excelwrite.feature:7)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs CucumberScenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">TestRunner.Runner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="feature(&quot;New User Registration in Myntra&quot;, &quot;Sign up the Myntra application&quot;)">
+                  </a> <!-- feature("New User Registration in Myntra", "Sign up the Myntra application") -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">("New User Registration in Myntra", "Sign up the Myntra application")</span>
+                  <em>
+(Runs CucumberScenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="feature(&quot;Login with Valid Credentials&quot;, &quot;Login Myntra&quot;)">
@@ -144,6 +221,16 @@
                   </a> <!-- feature("Login with Valid Credentials", "Login Myntra") -->
                   <span class="method-name">feature</span>
                   <span class="parameters">("Login with Valid Credentials", "Login Myntra")</span>
+                  <em>
+(Runs CucumberScenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="feature(&quot;Product Payment with Valid Credentials&quot;, &quot;Checkout the Product&quot;)">
+                  </a> <!-- feature("Product Payment with Valid Credentials", "Checkout the Product") -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">("Product Payment with Valid Credentials", "Checkout the Product")</span>
                   <em>
 (Runs CucumberScenarios)                  </em>
                 </div> <!-- method-content -->
@@ -153,7 +240,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\RAJKUMAR\AppData\Local\Temp\testng-eclipse--44790002\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Prathap\AppData\Local\Temp\testng-eclipse-1743417130\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -210,20 +297,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'feature')
 data.setCell(0, 2, 'TestRunner.Runner')
-data.setCell(0, 3, 17094);
+data.setCell(0, 3, 146223);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'feature')
 data.setCell(1, 2, 'TestRunner.Runner')
-data.setCell(1, 3, 12206);
+data.setCell(1, 3, 53140);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'feature')
+data.setCell(2, 2, 'TestRunner.Runner')
+data.setCell(2, 3, 47573);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'feature')
+data.setCell(3, 2, 'TestRunner.Runner')
+data.setCell(3, 3, 30551);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'feature')
+data.setCell(4, 2, 'TestRunner.Runner')
+data.setCell(4, 3, 25597);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 29 seconds</span>
+              <span class="suite-total-time">Total running time: 5 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -255,16 +354,30 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">feature("Login with Valid Credentials", "Login Myntra")</span>
-                <span class="method-start">243 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">feature("write data into excel sheet", "Write product details in excel sheet")</span>
+                <span class="method-start">508 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">feature("Login with Valid Credentials", "Login Myntra")</span>
-                <span class="method-start">17340 ms</span>
+                <span class="method-start">146835 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">feature("Login with Valid Credentials", "Login Myntra")</span>
+                <span class="method-start">194413 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">feature("Product Payment with Valid Credentials", "Checkout the Product")</span>
+                <span class="method-start">224967 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">feature("New User Registration in Myntra", "Sign up the Myntra application")</span>
+                <span class="method-start">278110 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">29549 ms</span>
+                <span class="method-start">303723 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

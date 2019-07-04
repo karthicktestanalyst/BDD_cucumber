@@ -87,7 +87,7 @@ public class Excelwrite_StepDef {
 			//if(i==20) break;
 		}
 		
-		FileOutputStream out = new FileOutputStream(new File("D:\\Testing\\WriteExcel\\Myntra.xlsx"));
+		FileOutputStream out = new FileOutputStream(new File("D:\\Myntra.xlsx"));
 		work.write(out);
 		out.close();
 		driver.quit();
